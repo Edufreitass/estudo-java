@@ -29,6 +29,7 @@ public class TestaLacosBreakContinue {
 				break;
 			System.out.println("i = " + i);
 		}
+		
 		System.out.println("fora do while");
 
 	}
