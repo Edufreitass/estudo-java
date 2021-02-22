@@ -4,11 +4,11 @@ O patrimônio disponibiliza uma API REST que disponibliza os recursos para reali
 
 Recursos disponíveis para acesso via API:
 <a name="marca"></a>
-- [**Marca**](#marca)
+- [**Marca**](#marca1)
 <a name="patrimonio"></a>
-- [**Patrimônio**](#patrimonio)
+- [**Patrimônio**](#patrimonio1)
 <a name="usuario"></a>
-- [**Usuários**](#usuario)
+- [**Usuários**](#usuario1)
 
 ## Informações importantes
 ### Banco de dados
@@ -71,7 +71,7 @@ Para utilizar a API, você precisará utilizar uma das seguintes opções:
 
 # Group Recursos
 
-<a id="usuario"></a>
+<a id="usuario1"></a>
 # Usuario [/api/usuario]
 
 Cadastra um novo usuário no sistema
@@ -101,7 +101,7 @@ Cadastra um novo usuário no sistema
 
 [Topo](#usuario)
 
-<a id="marca"></a>
+<a id="marca1"></a>
 # Marca [/api/marca]
 
 As marcas que podem ser consultadas e adicionadas referentes ao itens do inventário.
@@ -218,7 +218,7 @@ As marcas que podem ser consultadas e adicionadas referentes ao itens do invent�
 
 [Topo](#marca)
 
-<a id="patrimonio"></a>
+<a id="patrimonio1"></a>
 # Patrimônio [/api/patrimonio]
 
 Cria e consulta as informações do patrimônio
