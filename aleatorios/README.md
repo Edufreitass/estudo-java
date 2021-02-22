@@ -3,7 +3,7 @@
 O patrimônio disponibiliza uma API REST que disponibliza os recursos para realizar o controle de inventário de uma empresa ou afins.
 
 Recursos disponíveis para acesso via API:
-<a name="ancora"></a>
+
 - [**Marca**](#ancora1)
 - [**Patrimônio**](#ancora2)
 - [**Usuários**](#ancora3)
