@@ -69,7 +69,7 @@ Para utilizar a API, você precisará utilizar uma das seguintes opções:
 
 # Group Recursos
 
-<a id="ancora1"></a>
+<a id="ancora3"></a>
 # Usuario [/api/usuario]
 
 Cadastra um novo usuário no sistema
@@ -97,7 +97,7 @@ Cadastra um novo usuário no sistema
 
 + Response 201 (application/json)
 
-<a id="ancora2"></a>
+<a id="ancora1"></a>
 # Marca [/api/marca]
 
 As marcas que podem ser consultadas e adicionadas referentes ao itens do inventário.
@@ -212,7 +212,7 @@ As marcas que podem ser consultadas e adicionadas referentes ao itens do invent�
 }
 ```
 
-<a id="ancora3"></a>
+<a id="ancora2"></a>
 # Patrimônio [/api/patrimonio]
 
 Cria e consulta as informações do patrimônio
