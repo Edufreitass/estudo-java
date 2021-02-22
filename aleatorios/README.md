@@ -1,6 +1,6 @@
 # Desafio Java - REST API - Movie Challenge
 
-O [patrimônio] disponibiliza uma API REST que disponibliza os recursos para realizar o controle de inventário de uma empresa ou afins.
+O patrimônio disponibiliza uma API REST que disponibliza os recursos para realizar o controle de inventário de uma empresa ou afins.
 
 Recursos disponíveis para acesso via API:
 <a name="marca"></a>
@@ -98,6 +98,8 @@ Cadastra um novo usuário no sistema
 ```
 
 + Response 201 (application/json)
+
+[Topo](#usuario)
 
 <a id="marca"></a>
 # Marca [/api/marca]
@@ -213,6 +215,8 @@ As marcas que podem ser consultadas e adicionadas referentes ao itens do invent�
     "nome": "Lenovo"
 }
 ```
+
+[Topo](#marca)
 
 <a id="patrimonio"></a>
 # Patrimônio [/api/patrimonio]
@@ -352,3 +356,5 @@ Cria e consulta as informações do patrimônio
     }
 }
 ```
+
+[Topo](#patrimonio)
