@@ -3,12 +3,10 @@
 O patrimônio disponibiliza uma API REST que disponibliza os recursos para realizar o controle de inventário de uma empresa ou afins.
 
 Recursos disponíveis para acesso via API:
-<a name="marca"></a>
-- [**Marca**](#marca1)
-<a name="patrimonio"></a>
-- [**Patrimônio**](#patrimonio1)
-<a name="usuario"></a>
-- [**Usuários**](#usuario1)
+<a name="ancora"></a>
+- [**Marca**](#ancora1)
+- [**Patrimônio**](#ancora2)
+- [**Usuários**](#ancora3)
 
 ## Informações importantes
 ### Banco de dados
@@ -71,7 +69,7 @@ Para utilizar a API, você precisará utilizar uma das seguintes opções:
 
 # Group Recursos
 
-<a id="usuario1"></a>
+<a id="ancora1"></a>
 # Usuario [/api/usuario]
 
 Cadastra um novo usuário no sistema
@@ -99,9 +97,7 @@ Cadastra um novo usuário no sistema
 
 + Response 201 (application/json)
 
-[Topo](#usuario)
-
-<a id="marca1"></a>
+<a id="ancora2"></a>
 # Marca [/api/marca]
 
 As marcas que podem ser consultadas e adicionadas referentes ao itens do inventário.
@@ -216,9 +212,7 @@ As marcas que podem ser consultadas e adicionadas referentes ao itens do invent�
 }
 ```
 
-[Topo](#marca)
-
-<a id="patrimonio1"></a>
+<a id="ancora3"></a>
 # Patrimônio [/api/patrimonio]
 
 Cria e consulta as informações do patrimônio
@@ -356,5 +350,3 @@ Cria e consulta as informações do patrimônio
     }
 }
 ```
-
-[Topo](#patrimonio)
