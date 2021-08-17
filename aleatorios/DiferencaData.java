@@ -14,7 +14,7 @@ public class DiferencaData {
 
 	public static void main(String[] args) {
 		try {
-			diferençaDataAteJava7();
+			diferencaDataAteJava7();
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
@@ -29,7 +29,7 @@ public class DiferencaData {
 		diferencaDataJava8ComChronoUnit();
 	}
 	
-	public static void diferençaDataAteJava7() throws ParseException {
+	public static void diferencaDataAteJava7() throws ParseException {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		Date primeiraDt = sdf.parse("01/01/2019");
 		Date segundaDt = sdf.parse("01/02/2019");
