@@ -8,6 +8,7 @@ import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 public class GerenciadoraContasTest {
 
@@ -36,5 +37,16 @@ public class GerenciadoraContasTest {
         // Assert
         assertThat(conta02.getSaldo(), is(100.0));
         assertThat(conta01.getSaldo(), is(100.0));
+    }
+
+    @Test
+    public void testTransfereValorComSaldoInsuficiente() {
+        // Act
+        boolean sucesso = gerenciadoraContas.transfereValor(1, 300, 2);
+
+        // Assert
+        assertTrue(sucesso);
+        assertThat(conta01.getSaldo(), is(-100.0));
+        assertThat(conta02.getSaldo(), is(300.0));
     }
 }
