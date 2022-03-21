@@ -1,5 +1,6 @@
 package negocio;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -11,19 +12,24 @@ import static org.junit.Assert.assertThat;
 public class GerenciadoraContasTest {
 
     private GerenciadoraContas gerenciadoraContas;
+    private ContaCorrente conta01;
+    private ContaCorrente conta02;
 
-    @Test
-    public void testTransfereValor() {
+    @Before
+    public void setUp() {
         // Arrange
-        ContaCorrente conta01 = new ContaCorrente(1, 200, true);
-        ContaCorrente conta02 = new ContaCorrente(2, 0, true);
+        conta01 = new ContaCorrente(1, 200, true);
+        conta02 = new ContaCorrente(2, 0, true);
 
         List<ContaCorrente> contasDoBanco = new ArrayList<>();
         contasDoBanco.add(conta01);
         contasDoBanco.add(conta02);
 
         gerenciadoraContas = new GerenciadoraContas(contasDoBanco);
+    }
 
+    @Test
+    public void testTransfereValor() {
         // Act
         gerenciadoraContas.transfereValor(1, 100, 2);
 
