@@ -1,0 +1,34 @@
+package negocio;
+
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+public class GerenciadoraContasTest {
+
+    private GerenciadoraContas gerenciadoraContas;
+
+    @Test
+    public void testTransfereValor() {
+        // Arrange
+        ContaCorrente conta01 = new ContaCorrente(1, 200, true);
+        ContaCorrente conta02 = new ContaCorrente(2, 0, true);
+
+        List<ContaCorrente> contasDoBanco = new ArrayList<>();
+        contasDoBanco.add(conta01);
+        contasDoBanco.add(conta02);
+
+        gerenciadoraContas = new GerenciadoraContas(contasDoBanco);
+
+        // Act
+        gerenciadoraContas.transfereValor(1, 100, 2);
+
+        // Assert
+        assertThat(conta02.getSaldo(), is(100.0));
+        assertThat(conta01.getSaldo(), is(100.0));
+    }
+}
